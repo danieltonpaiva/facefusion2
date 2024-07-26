@@ -33,10 +33,10 @@ def render() -> None:
 		show_label = False
 	)
 	register_ui_component('source_image', SOURCE_IMAGE)
-	arquivos = [f for f in os.listdir('/content/facefusion2/exemplos/') if os.path.isfile(os.path.join('/content/facefusion2/exemplos/', f))]
+	arquivos = [f for f in os.listdir('/content/facenico0/exemplos/') if os.path.isfile(os.path.join('/content/facenico0/exemplos/', f))]
 	files = []
 	for x in arquivos:
-		files.append('/content/facefusion2/exemplos/' + x)
+		files.append('/content/facenico0/exemplos/' + x)
 
 	examples = gradio.Examples(sorted(files), SOURCE_FILE, examples_per_page=20)
 
